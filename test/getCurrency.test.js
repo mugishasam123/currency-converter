@@ -1,4 +1,4 @@
-const app = require('../server') // assuming that your app is exported from app.js
+const app = require('../server') // assuming that your app is exported from server.js
 const chai = require('chai')
 const chaiHttp = require('chai-http')
 const chaiFs = require('chai-fs');
