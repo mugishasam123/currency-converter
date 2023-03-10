@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Currency Converter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="card">
+
+    <h2 class="card__heading">Currency Converter</h2>
+    <form action="/convert" method="get" class="form">
+      <div class="form__control">
+        <label for="amount">Enter Amount:</label>
+        <input type="number" name="amount" id="amount" placeholder="Enter amount" required>
+      </div>
+      <div class="form__control">
+        <label for="from-currency">From:</label>
+        <select name="fromCurrency" id="from-currency" class="form__selector" required>
+          <% for (const [key, value] of Object.entries(currencySymbols)) { %>
+            <option value=<%=`${key}`%>><%=`${key} - ${value}` %></option>
+          <%} %>
+        </select>
+      </div>
+      <div class="form__control">
+        <label for="to-currency">To:</label>
+        <select name="toCurrency" id="to-currency" class="form__selector" required>
+          <% for (const [key, value] of Object.entries(currencySymbols)) { %>
+            <option value=<%=`${key}`%>><%=`${key} - ${value}` %></option>
+          <%} %>
+        </select>
+      </div>
+      <button type="submit" class="btn">Convert</button>
+    </form>
+  </div>
+</body>
+</html>
