@@ -6,6 +6,7 @@
 
 <br/>
 
+![image](https://user-images.githubusercontent.com/90222110/224333560-106bb16d-3e0d-486a-a9dd-eb189d1eede5.png)
 
 
 <br/>
@@ -51,6 +52,13 @@ $ git clone https://github.com/mugishasam123/currency-converter
 $ cd currency-converter
 ```
 
+#### Getting API key
+ This app consumes the data from the [APIlayer API](https://apilayer.com/marketplace/fixer-api)
+ To get the API key, go to the site and read the documentation about using the API.
+#### Environment variables
+ Environment variables used in the app is API_KEY.
+- Create the `.env` file
+- Assign the API KEY to the API_KEY variable  
 #### Run project
 
 ```bash
